@@ -1,10 +1,10 @@
 import useReveal from '../hooks/useReveal';
 
 const ROWS = [
-  { degree: 'PGDM', institute: 'IMT, Hyderabad', year: '2027', score: '6.18', unit: 'CGPA', current: true },
-  { degree: 'B.Sc. (Hons.) Physics', institute: 'Nitish Kumar Smarak College, Sahdei', year: '2022', score: '70.6', unit: '%' },
-  { degree: 'XII', institute: 'S.N.S College, Hajipur', year: '2019', score: '73.8', unit: '%' },
-  { degree: 'X', institute: 'St Johns Academy, Daulatpur Chandi', year: '2017', score: '81.7', unit: '%' },
+  { degree: 'PGDM', institute: 'IMT, Hyderabad', year: '2027', current: true },
+  { degree: 'B.Sc. (Hons.) Physics', institute: 'Nitish Kumar Smarak College, Sahdei', year: '2022' },
+  { degree: 'XII', institute: 'S.N.S College, Hajipur', year: '2019' },
+  { degree: 'X', institute: 'St Johns Academy, Daulatpur Chandi', year: '2017' },
 ];
 
 export default function Education() {
@@ -22,7 +22,6 @@ export default function Education() {
           <span>Degree</span>
           <span>Institute</span>
           <span>Year</span>
-          <span>Score</span>
         </div>
         {ROWS.map((row) => (
           <div className={`scoreboard__row ${row.current ? 'scoreboard__row--current' : ''}`} key={row.degree}>
@@ -32,10 +31,6 @@ export default function Education() {
             </span>
             <span className="scoreboard__institute">{row.institute}</span>
             <span className="scoreboard__year">{row.year}</span>
-            <span className="scoreboard__score">
-              {row.score}
-              <em>{row.unit}</em>
-            </span>
           </div>
         ))}
       </div>

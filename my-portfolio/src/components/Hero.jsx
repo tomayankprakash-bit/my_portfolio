@@ -4,7 +4,7 @@ import linkedinIcon from '../assets/linkedin.svg';
 
 const STATS = [
   { label: 'Months in field sales', value: 22, suffix: '' },
-  { label: 'PGDM CGPA', value: 6.18, suffix: '', decimals: 2 },
+  { label: 'Marketing Curiosity', value: 100, suffix: '%' },
   { label: 'Certifications logged', value: 3, suffix: '+' },
   { label: 'District cricket captaincy', value: 1, suffix: '' },
 ];
@@ -65,9 +65,7 @@ export default function Hero() {
             Prakash
           </h1>
           <p className="hero__tagline">
-            PGDM candidate at IMT Hyderabad, building on 22 months of field sales
-            experience &mdash; opening conversations, closing gaps, and turning
-            client requirements into working solutions.
+            PGDM candidate at IMT Hyderabad, blending a sharp analytical mindset with a deep passion for marketing. I thrive where data meets human behavior &mdash; asking why people choose what they choose, and turning those insights into compelling strategies.
           </p>
 
           <div className="hero__cta-row">
